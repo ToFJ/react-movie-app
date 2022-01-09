@@ -7,7 +7,7 @@ const AppProvider = ({ children }) => {
   const [query, setQuery] = useState("arrow");
   const { isLoading, error, fetchedData } = useFetch(`&s=${query}`);
 
-  return <AppContext.Provider value="placeholder">{children}</AppContext.Provider>;
+  return <AppContext.Provider value={{ isLoading, setQuery, error, fetchedData }}>{children}</AppContext.Provider>;
 };
 
 export const useGlobalContext = () => {
