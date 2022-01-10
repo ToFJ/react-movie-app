@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Movie = ({ Title, Year, Poster }) => {
   return (
     <div className="m-4 pb-28 border border-gray-900 rounded-b-lg relative">
-      <img src={Poster} alt={Title} className="" />
+      <img src={Poster} alt={Title} className=" w-full h-96 object-cover" />
       <div className="absolute -bottom-0 text-xl">
         <h2>{Title}</h2>
         <p>{Year}</p>

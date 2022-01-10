@@ -11,9 +11,12 @@ export const useFetch = query => {
     try {
       const response = await fetch(url);
       const fetchData = await response.json();
-      setFetchedData(fetchData);
-      if (fetchData === undefined || null) {
-        setError({ display: true, msg: "test" });
+      if (fetchData.Response === "True") {
+        setFetchedData(fetchData);
+
+        setError({ show: false, msg: "" });
+      } else {
+        setError({ show: true, msg: fetchData.Error });
       }
     } catch (error) {
       console.log(error);

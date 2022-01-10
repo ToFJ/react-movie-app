@@ -5,13 +5,8 @@ import Movie from "./Movie";
 const MovieList = () => {
   const { fetchedData, isLoading } = useGlobalContext();
   const { Search } = fetchedData;
-  console.log(Search.length);
   if (isLoading) {
     return <Loading />;
-  }
-
-  if (Search.length < 0) {
-    return <p>test</p>;
   }
 
   return (

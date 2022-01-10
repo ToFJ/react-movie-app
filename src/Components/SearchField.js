@@ -3,16 +3,20 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { useGlobalContext } from "../context";
 
 const SearchField = () => {
-  const { setQuery } = useGlobalContext();
+  const { setQuery, error } = useGlobalContext();
   const searchRef = useRef("");
 
   const handleSubmit = e => {
-    setQuery(searchRef.current.value);
     e.preventDefault();
+    if (searchRef.current.value === "") {
+      setQuery("batman");
+    } else {
+      setQuery(searchRef.current.value);
+    }
   };
 
   return (
-    <div className="flex justify-center items-center mt-10 " onSubmit={handleSubmit}>
+    <div className="flex justify-center items-center flex-col mt-10 " onSubmit={handleSubmit}>
       <form className="flex text-2xl border-black ">
         <input
           className="w-full lg:w-96 rounded-lg border-2 border-black placeholder:italic placeholder:text-2xl"
@@ -23,6 +27,7 @@ const SearchField = () => {
           onChange={e => searchRef.value}
         />
       </form>
+      <p className="text-red-500">{error.show ? error.msg : ""}</p>
     </div>
   );
 };
