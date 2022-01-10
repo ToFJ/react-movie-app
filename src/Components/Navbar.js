@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="shadow shadow-gray-400 flex justify-between items-center py-2 text-2xl text-white">
       <Link to="/">
         <div className="flex">
-          <img src={logo512} alt="logo" className="inline w-10 ml-10 mr-2" />
+          <img src={logo512} alt="logo" className="inline w-10 h-10 ml-10 mr-2" />
           <h1 className="cursor-pointer">MovieDB</h1>
         </div>
       </Link>
