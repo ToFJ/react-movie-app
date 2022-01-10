@@ -26,7 +26,7 @@ const Navbar = () => {
           <li className=" ml-2 cursor-pointer border rounded-xl text-xl py-1 px-4 bg-cyan-400 hover:bg-cyan-300 ease-in-out duration-200 hidden md:block">
             <Link to="/about">Sign Up</Link>
           </li>
-          <li className="md:hidden text-cyan-400 cursor-pointer text-4xl ease-in-out duration-200">
+          <li className="md:hidden -mr-6 text-cyan-400 cursor-pointer text-4xl ease-in-out duration-200">
             <GiHamburgerMenu />
           </li>
         </ul>
