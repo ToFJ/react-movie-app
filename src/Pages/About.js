@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="mx-10 xl:px-96 lg:px-48 my-20 flex justify-center items-center flex-col">
+    <div className="mx-10 xl:px-96 lg:px-48 my-20 flex justify-center items-center flex-col text-white">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, sapiente. Laboriosam deleniti quis, aut velit
         amet voluptas eligendi officia reprehenderit commodi cum repellendus aliquid exercitationem sunt quisquam
@@ -17,7 +17,7 @@ const About = () => {
         </span>
       </p>
       <Link to="/">
-        <button className="mt-10 flex justify-center cursor-pointer border rounded-xl text-xl py-1 px-4 bg-cyan-400 hover:bg-cyan-300 ease-in-out duration-200">
+        <button className="mt-10 flex justify-center cursor-pointer text-black rounded-xl text-xl py-1 px-4 bg-cyan-400 hover:bg-cyan-300 ease-in-out duration-200">
           Back Home
         </button>
       </Link>

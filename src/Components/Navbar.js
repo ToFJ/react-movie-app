@@ -21,10 +21,10 @@ const Navbar = () => {
             <Link to="/about">About</Link>
           </li>
           <li className=" ml-4 cursor-pointer text-black rounded-xl text-xl py-1 px-4 bg-cyan-400 hover:bg-cyan-300 ease-in-out duration-200 hidden md:block">
-            <Link to="/about">Log In</Link>
+            Log In
           </li>
           <li className=" ml-2 cursor-pointer text-black rounded-xl text-xl py-1 px-4 bg-cyan-400 hover:bg-cyan-300 ease-in-out duration-200 hidden md:block">
-            <Link to="/about">Sign Up</Link>
+            Sign Up
           </li>
           <li className="md:hidden -mr-6 text-cyan-400 cursor-pointer text-4xl ease-in-out duration-200">
             <GiHamburgerMenu />
