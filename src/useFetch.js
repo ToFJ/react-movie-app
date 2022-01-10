@@ -14,6 +14,7 @@ export const useFetch = query => {
       setFetchedData(fetchData);
     } catch (error) {
       console.log(error);
+      setError({ display: true, msg: error });
     }
     setIsLoading(false);
   };
