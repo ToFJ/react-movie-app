@@ -19,7 +19,7 @@ const SearchField = () => {
     <div className="flex justify-center items-center flex-col mt-10 " onSubmit={handleSubmit}>
       <form className="flex text-2xl border-black ">
         <input
-          className="w-full lg:w-96 rounded-lg border-2 border-black placeholder:italic placeholder:text-2xl"
+          className=" px-1 w-full lg:w-96 rounded-lg border-2 border-black placeholder:italic placeholder:text-2xl"
           type="text"
           name="search"
           placeholder="Search Movie"
