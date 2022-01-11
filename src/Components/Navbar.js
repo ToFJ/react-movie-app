@@ -4,7 +4,7 @@ import logo512 from "../images/logo512.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   return (
     <nav className="shadow shadow-gray-400 flex justify-between items-center py-2 text-2xl text-white">
       <Link to="/">
