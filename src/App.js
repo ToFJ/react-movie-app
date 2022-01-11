@@ -22,7 +22,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/movie/:id" element={<SingleMovie />} />
+        <Route path="/movie/:imdbID" element={<SingleMovie />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </Router>
