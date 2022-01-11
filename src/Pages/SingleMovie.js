@@ -38,14 +38,14 @@ const SingleMovie = () => {
           <p className="mb-2 ">
             {fetchedData.Ratings.map((rating, index) => {
               return (
-                <p className="mb-2 " key={index}>
+                <p className="mb-2 sm:block flex flex-col" key={index}>
                   <span className="text-cyan-300 text-xl underline">Ratings:</span> {rating.Source}
                   <span> {rating.Value}</span>
                 </p>
               );
             })}
           </p>
-          <p>
+          <p className="sm:block flex flex-col">
             <span className="text-cyan-300 text-xl underline">imdb Rating:</span> {fetchedData.imdbRating}
           </p>
         </div>
