@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import { AiOutlineSearch } from "react-icons/ai";
 import { useGlobalContext } from "../context";
 
 const SearchField = () => {
@@ -8,11 +7,7 @@ const SearchField = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    if (searchRef.current.value === "") {
-      setQuery("batman");
-    } else {
-      setQuery(searchRef.current.value);
-    }
+    setQuery(searchRef.current.value);
   };
 
   return (
