@@ -6,7 +6,7 @@ const Movie = ({ Title, Year, Poster, imdbID }) => {
     <div className="m-4 pb-8 relative group ">
       <Link to={`/movie/${imdbID}`}>
         <img src={Poster} alt={Title} className="h-96 w-80 object-cover cursor-pointer" />
-        <div className="absolute text-white bottom-8 p-4 w-full isolate bg-opacity-70 bg-slate-900 lg:opacity-0 group-hover:opacity-100 translate-y-4 group-hover:-translate-y-0 transition-all ease-in-out duration-[300ms]  ">
+        <div className="absolute text-white bottom-8 p-4 w-full isolate bg-opacity-70 bg-slate-900 lg:opacity-0 group-hover:opacity-100 xl:translate-y-4 xl:group-hover:-translate-y-0 transition-all ease-in-out duration-[300ms]  ">
           <h3>{Title}</h3>
           <p>{Year}</p>
           <Link to={`/movie/${imdbID}`}>
