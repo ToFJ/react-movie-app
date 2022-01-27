@@ -1,6 +1,6 @@
 # React Movie App with TailwindCSS and React Router
 
-One of my first React projects that didn't concentrate on specific language/framework features.
+One of my first React projects that didn't focus on specific language/framework features.
 
 Even though it was one of the first React projects I did, I somehow thought it would be a good idea to pick up TailwindCSS while still figuring out the nitty-gritty of React.
 
